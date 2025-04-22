@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</header>
+
+<body>
+
+
+        <div class="main-content">
+            <div class="table_header">
+                <span>Sutun Taşıma , sıralama ve arama</span>
+                <div><input oninput="window.form.searchRows(this.value)" type="text" placeholder="Ara..."></div>
+            </div>
+            <table>
+                <thead>
+                    <th draggaßble="true" onclick="window.form.sortRows('adi',this)"><span>Adı</span><i></i></th>
+                    <th draggable="true" onclick="window.form.sortRows('soyadi',this)"><span>Soyadı</span><i></i></th>
+                    <th draggable="true" onclick="window.form.sortRows('yasi',this)"><span>Yaş</span><i></i></th>
+                </thead>
+                <tbody class="table_content">
+                    <tr></tr>
+                </tbody>
+            </table>
+
+        </div>
+</body>
+<script type="text/javascript" src="style/form.js"></script>
+
+</html>

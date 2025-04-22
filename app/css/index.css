@@ -1,0 +1,81 @@
+.main-content {
+    width: 750px;
+    margin: 0 auto;
+    display: block;
+}
+
+table  {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table:is(th, td) {
+    white-space: nowrap;
+    padding: 60px 6px;
+    height: 48px;
+    font-size: 14px;
+
+}
+table th {
+    color: rgb(97 102 120 / 45%);
+    cursor: pointer;
+    /* vertical-align: middle; */
+    transition: 0.3s;
+}
+table th i {
+   padding-left: 20px;
+}
+table th:is(.active , :hover) {
+    color: inherit;
+}
+
+table td {
+    opacity: 0.75;
+}
+table tr {
+    border-bottom: 1px solid #e9e5f3;
+}
+table tbody tr {
+    height: 50px;
+}
+table tbody tr:last-child {
+    border :0;
+}
+table tbody tr:nth-child(odd) {
+    background: rgb(97 102 120 / 4%);
+}
+
+.drag {
+    opacity: 0.4;
+}
+
+.drop {
+    transition: none;
+}
+th.over:not(.drop) {
+    border-bottom-color: #1e64f8;
+    transition: 0.3s;
+}
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin: 27px 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.table_header input {
+     /* background-color: #1e64f8; */
+     padding: 4px;
+     border: 1px solid gray;
+     width: 240px;
+     height: 30px;
+     border-radius: 7px;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+}
+.table_content{
+    
+}
